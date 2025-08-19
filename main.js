@@ -1,8 +1,13 @@
 import { cardStorage } from "./data.js";
 
+const title = document.getElementById("title");
 const container = document.getElementById("container");
 
 const cardPrinting = () => {
+    const h1 = document.createElement("h1");
+    title.appendChild(h1)
+    h1.innerText = "cards"
+    h1.classList = "h1"
     cardStorage.forEach(card => {
         createCard(card);
     });
