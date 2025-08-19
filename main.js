@@ -1,6 +1,13 @@
 import { cardStorage } from "./data.js";
 
+const search = document.getElementById("SearchInput")
 const container = document.getElementById("container");
+
+let searchInput = "";
+search.addEventListener("input", (event) => {
+    searchInput = search.value
+    console.log(searchInput);
+})
 
 const cardPrinting = () => {
     cardStorage.forEach(card => {
