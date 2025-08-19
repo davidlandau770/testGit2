@@ -3,3 +3,42 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: rgb(221, 221, 252);
+}
+
+#container {
+    width: 80vw;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    box-shadow: 1px 1px 5px 1px;
+    background-color: rgb(235, 242, 255);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+}
+
+.p {
+    overflow: scroll;
+    scrollbar-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 3px;
+}
